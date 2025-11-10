@@ -5,21 +5,21 @@
 class Ipums2db < Formula
   desc "Convert IPUMS data extracts to database dump files"
   homepage "https://github.com/rhawrami/ipums2db"
-  version "1.0.2"
+  version "1.1.1"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/rhawrami/ipums2db/releases/download/v1.0.2/ipums2db_Darwin_x86_64.tar.gz"
-      sha256 "602699b5923ad9af789b8078be399c31149abd943a204bf887ce2c8bcec9265e"
+      url "https://github.com/rhawrami/ipums2db/releases/download/v1.1.1/ipums2db_Darwin_x86_64.tar.gz"
+      sha256 "9c5dc5fb46d7e6c148ed7e00ff3747a1a1c5e311e1ecfde37e01fe3333633184"
 
       def install
         bin.install "ipums2db"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/rhawrami/ipums2db/releases/download/v1.0.2/ipums2db_Darwin_arm64.tar.gz"
-      sha256 "6db63dde606a41b9b1f3863aa617c6f5bb5feca04ae88724f99a47d82e199e8a"
+      url "https://github.com/rhawrami/ipums2db/releases/download/v1.1.1/ipums2db_Darwin_arm64.tar.gz"
+      sha256 "a49de350c3cda75ff5dce3efd9d09d1b03c96dc5c72214309e2708a6de47826e"
 
       def install
         bin.install "ipums2db"
@@ -29,15 +29,15 @@ class Ipums2db < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/rhawrami/ipums2db/releases/download/v1.0.2/ipums2db_Linux_x86_64.tar.gz"
-      sha256 "8b5c2f7f6d9a9984b65e2e3aa72afdc3082ef393bbb104e0ec9704f070adb39f"
+      url "https://github.com/rhawrami/ipums2db/releases/download/v1.1.1/ipums2db_Linux_x86_64.tar.gz"
+      sha256 "9d21a6c23368d1ba046bb27d16496701bbd405dc860320fc04bf26eea9acff9f"
       def install
         bin.install "ipums2db"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/rhawrami/ipums2db/releases/download/v1.0.2/ipums2db_Linux_arm64.tar.gz"
-      sha256 "530daaa39449a01c9a98d88be5a3f7923cc8af5b561cfd96b23a0e4fe2503f20"
+      url "https://github.com/rhawrami/ipums2db/releases/download/v1.1.1/ipums2db_Linux_arm64.tar.gz"
+      sha256 "22b5cfcc43b92e30a43163809e420d022802faf5aeacad599fc351f01869ccea"
       def install
         bin.install "ipums2db"
       end
